@@ -19,7 +19,7 @@ p{
 }
 
 #header-nav{
-	background-color: #999999;
+	background-color: #00000;
 	border-radius: 0;
 	border-bottom: 3px solid black ;
 }
@@ -46,7 +46,7 @@ p{
   text-align: center;
 }
 #nav-list a:hover {
-  background: #dddddd;
+  background: #000000;
 }
 #nav-list a span {
   font-size: 1.8em;
