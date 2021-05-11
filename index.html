@@ -1,27 +1,226 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="style.css"> 
-	<title> Coursera assignment </title>
-</head>
-<body>
-<p>	Our Menu </p>
-<div id="div1">
-	<div class="int"> Chicken</div>
-	<div class="text">	This is 1st section </div>
-</div>
-<div id="div2">
-<div class="int"> beef</div> 
-<div class="text">	This is 2nd section </div>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+-->
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    
+    <title>TeraWatt Testing </title>
+  </head>
+
+  <body>
+    
+      <header class="sticky" id="myHeader">
+        <img src="icon.png" id="logo" alt="company logo"> 
+        <label for="toggle"> <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="3.99988" y="11" width="18.1818" height="2.18182" rx="1" fill="#1A1A1A"/>
+          <rect x="9.0907" y="18.0908" width="18.1818" height="2.18182" rx="1" fill="#1A1A1A"/>
+          </svg> </label>
+            <input type="checkbox" id="toggle"/>
+        <nav class="naviLinks" >
+          <ul>
+            <li><a href="#"> HOME </a></li>
+            <li><a href="#about"> ABOUT </a></li>
+            <li><a href="#services_"> OUR SERVICES </a></li>
+            <li id="contactUs"><a href="contact.html"> CONTACT US </a></li>
+             
+            <!-- <li class="toggle"> <span class="bars"> </span> </li> -->
+          </ul>
+        </nav>
+      </header>
+    <!-- background image  -->
+      <div class="imageContainer">
+       <!-- hero section content  -->
+        <div class="flexContainer-1"> 
+            <div class="flex-item" id="flex-item-1">
+        <h1> Renewable Energy Resources        </h1>
+        <p>Our team provides a free energy analysis, site survey, 
+          engineering, financing, permits, installation</p>
+             <button class="button" onclick="window.location.href='contact.html';"> CONTACT US 
+
+             </button>
+    </div>
+    <div class="flex-item" id="flex-item-2">
+        <img src="heroImage_max.png" 
+        srcset="heroImage_max.png 800w,
+        heroImage_min.png 576w"
+      sizes="(max-width: 576px) 576px  "
+       id="heroimg"> </image>
+    </div>
+    </div>
+      
+       
+    </div>
+
+    <div class="mainCont" id="about">
+      <div class="aboutUs" >
+        <h3>
+          Who are we?
+        </h3>
+        <p>
+        
+          Company incorporated in the year 2019. 
+          It provides services through Testing and Conformity Assessment Body (Laboratory) like accreditation
+          of the competence of laboratories and open Calibration Laboratories as well as provide technical training required in this regard.
+          The laboratory is a state of art facility with all the latest machinery/equipment for precise and thorough testing of electrical devices mentioned below.
+          Highly qualified in the area of quality measures as per ISO/IEC-17025 .
+        
+        </p>
+      </div>
+      <div class="aboutUs" id="aboutUs-Image">
+        <img src="aboutus.png" alt="images of laboratory" id="aboutuspng">
+      </div>
+      </div>
+
+      <div class="mainCont-2" id="services_">
+        <div class="gallery">
+        </div>
+       <div class="galleryByline">
+         <h3> Services we provide </h3>
+         <!-- <p id="byline"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis scelerisque at quam congue posuere libero in sit quam. Consequat, 
+           scelerisque non tincidunt sit lectus senectus.</p> -->
+           </div>
+           
+           <!-- <ol id="services">
+             <li> <strong> Project Development Support </strong> <br>
+            Decisions made during the earliest stages of solar project development are crucial to long-term success. We help you navigate complexities and mitigate risks associated with site screening, feasibility, resource assessment, array design, energy assessment, technology selection and suitability, infrastructure and balance of plant.
+          </li>
+          <br>
+           <li> <strong> Asset Management </strong> <br>
+            Growing investments in renewable power plants, aging fleets and the desire to ensure safety while maximizing asset value all drive companies to our asset management services. We help you evaluate and optimize your projects’ operations and maintenance (O&M), contracts, health and safety and remaining useful life. Our goal is to help you maximize energy production, reduce downtime and O&M costs, help assess project safety standard compliance, and support key decisions around asset life and repowering. See Asset Management for more information.
+          </li>
+          <br>
+          <li>
+           <strong> Due Diligence </strong> <br>
+            We provide comprehensive, flexible and timely due diligence services for the renewable industry. We help make the critical financial close of a renewable project as smooth and successful as possible. Leverage our technical and commercial expertise, along with our understanding of the intricacies of project finance to raise capital. Our team of engineers and technical advisers will help you prepare your project for financing, mitigate risk, and assess whether project proposals comply with technical standards and are ready for construction. The approach we employ for our Independent Engineering (IE) reports has been thoroughly vetted with some of the world’s top lead arrangers and lenders, so we know exactly what they are looking for, supporting a timely transaction.
+          </li>
+            
+          <br>
+          <li> <strong> Certification </strong> <br>
+            As renewable technologies advance, their continued safety, reliability and performance is important. As safety science experts, we help clients navigate these risks through certification for products, projects and grid code compliance.
+          </li>
+          <br>
+           <li> <strong> Testing and Inspection </strong> <br>
+            Manufacturers of renewable technologies, such as renewable turbines and peripheral equipment, rely on our technical and safety science experts to help navigate the risks. We operate renewable energy testing sites around the globe and perform inspections of operating equipment in the field. Visit Testing and Inspection for more information.
+            </li>
+            <br> 
+          <li> <strong> Commercial Laboratory Services </strong> <br>
+            We offer commercial laboratory services for the solar industry designed to meet the needs of laboratory directors and quality/compliance managers who are responsible for testing laboratories used for research, new product development, product performance, reliability or quality evaluations. 
+          </li>
+          
+          <li>
+        -->
+          <div class="servicesWeProvide">
+            <div class="service-row">
+              <div class="service-item" id="item-1">
+                <img src="feature1.png">
+                <h4>Project Development Support</h4>
+                <p> Decisions made during the earliest stages of solar project development are crucial to long-term success. 
+                  We help you navigate complexities and mitigate risks associated with site screening, feasibility, 
+                  resource assessment, array design, energy assessment, technology selection and suitability, infrastructure and balance of plant.</p>
+              </div>
+              <div class="service-item" >
+                <img src="feature2.png">
+                <h4>Asset Management</h4>
+                <p> Growing investments in renewable power plants, aging fleets and the desire to ensure safety while maximizing asset value all drive companies to our asset management services. Our goal is to help you maximize energy production, 
+                  reduce downtime and O&M costs, help assess project safety standard compliance, 
+                  and support key decisions around asset life and repowering. .</p>
+              </div>
+              </div>
+              <div class="service-row">
+              <div class="service-item" id="item-3">
+                <img src="feature3.png">
+                <h4>Due Diligence</h4>
+                <p> We provide comprehensive, flexible and timely due diligence services for the renewable industry. Leverage our technical and commercial expertise, along with our understanding of the intricacies
+                    of project finance to raise capital. Our team of engineers and technical advisers will help you prepare your project for 
+                  financing, mitigate risk, and assess whether project proposals comply with technical standards and are ready for construction</p>
+              </div>
+              <div class="service-item" >
+                <img src="feature4.png">
+                <h4>Certification</h4>
+                <p> As renewable technologies advance, their continued safety, reliability and performance is important.
+                   As safety science experts, we help clients navigate these risks through certification for products, 
+                   projects and grid code compliance..</p>
+              </div>
+            </div>
+            <div class="service-row">
+              <div class="service-item" id="item-5">
+                <img src="serviceicon.png">
+                <h4>Due Diligence</h4>
+                <p> We provide comprehensive, flexible and timely due diligence services for the renewable industry. We help make the critical financial close of a
+                   renewable project as smooth and successful as possible. Leverage our technical and commercial expertise, along with our understanding of the intricacies of project finance to raise capital. Our team of engineers and technical advisers will help you prepare your project for 
+                  financing, mitigate risk.</p>
+              </div>
+              <div class="service-item" >
+                <img src="serviceicon.png">
+                <h4>Certification</h4>
+                <p> As renewable technologies advance, their continued safety, reliability and performance is important.
+                   As safety science experts, we help clients navigate these risks through certification for products, 
+                   projects and grid code compliance..</p>
+              </div>
+            </div>
+
+            </div>
 
 
-</div>
+            <div class="commercial">
+         
+            </div>
+            </div>
+            <div class="background_services">
+            <ol id="services"> 
+            <li> <strong>  The Cabinet had approved scaling-up of solar power target from 20,000 MW of Grid 
+              Connected Solar power Projects to 1,00,000 MW by 2022. </strong> <br> <br> 
+              <hr> <br> 
+              While Large Scale Solar power generation projects are being installed to achieve the ambitious 
+              target of 100 GW of Solar Power generation by 2022, it has been planned to simultaneously 
+              develop decentralized Solar energy and other renewable energy generation Plants of capacity 
+              up to 2 MW which could be connected directly to existing 33/11 kV or 66/11 kV or 110/11 kV 
+              sub-stations of Distribution Company, thus saving in transmission system requirement apart 
+              from T&D losses. Such plants near these sub-stations may be developed, preferably by farmers, 
+              giving them an opportunity to increase their income by utilising their barren and uncultivable 
+              land for solar or other renewable energy based power plants. Cultivable land may also be used 
+              if the Solar plants are set up on stilts where crops can be grown below the stilts and sell RE
+              power to DISCOMs. <br> <br>
+              Besides, developing decentralized renewable power, it is planned to replace Agriculture Diesel 
+              pumps with Solar Water pumps and Solarise Grid connected Agriculture pumps. At present, 
+              over 30 million agricultural pumps are installed in India, out of which nearly 10 million pumps 
+              are diesel based. The Distribution Companies (DISCOMs) are not in a position to energize 
+              these pumps through grid connection as seen from the long waiting lists with such Distribution 
+              Companies. Hence there is a need to provide energy to these pumps through solar energy. Also, 
+              over 20 million grid-connected agriculture water pumps installed in the country consume more 
+              than 17 percent of total annual electricity consumption of the country. Solarization of the same 
+              can reduce dependence of these pumps on conventional sources of energy supplied by 
+              DISCOMs and thus reducing their burden of subsidy on agriculture consumption of Electricity. 
+              This will also provide additional source of income to farmers who will be in a position to sell 
+              the surplus power to DISCOMs.
+                        </li>
+                        </ol>
+                        <br>
+          <div class="links">
+            <a href=""> Important link 1</a>
+            <a href=""> Important link 1</a>
+            <a href=""> Important link 1</a>
+          </div>
+                      </div>
+  
 
-<div id="div3"> 
-	<div class="int"> sushi</div>
-	<div class="text">	This is 3rd section </div>
-</div>
-</body>
+        
+       
+      
+
+    
+
+   
+        </script>
+  </body>
 </html>
